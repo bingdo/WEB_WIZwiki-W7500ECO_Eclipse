@@ -4,10 +4,10 @@
 #include "gpioHandler.h"
 #include "userHandler.h"
 
-GPIO_TypeDef* GPIO_PORT[LEDn] = {LED1_GPIO_PORT, LED2_GPIO_PORT, LED3_GPIO_PORT};
-const uint16_t GPIO_PIN[LEDn] = {LED1_PIN, LED2_PIN, LED3_PIN};
-//PAD_Type GPIO_PAD[LEDn] = {LED1_GPIO_PAD, LED2_GPIO_PAD, LED3_GPIO_PAD};
-//PAD_AF_TypeDef GPIO_AF[LEDn] = {LED1_GPIO_AF, LED2_GPIO_AF, LED3_GPIO_AF};
+GPIO_TypeDef* GPIO_PORT[LEDn] = {LED1_GPIO_PORT, LED2_GPIO_PORT};
+const uint16_t GPIO_PIN[LEDn] = {LED1_PIN, LED2_PIN};
+//PAD_Type GPIO_PAD[LEDn] = {LED1_GPIO_PAD, LED2_GPIO_PAD};
+//PAD_AF_TypeDef GPIO_AF[LEDn] = {LED1_GPIO_AF, LED2_GPIO_AF};
 
 #if 1
 GPIO_TypeDef* IO_PORT[IOn] = {D0_GPIO_PORT, D1_GPIO_PORT, D2_GPIO_PORT, D3_GPIO_PORT,
@@ -52,7 +52,7 @@ void LED_Init(Led_TypeDef Led)
 
   GPIO_Init(GPIO_PORT[Led], &GPIO_InitStructure);
 
-  PAD_AFConfig(PAD_PC, GPIO_PIN[Led], PAD_AF1);
+  PAD_AFConfig(PAD_PA, GPIO_PIN[Led], PAD_AF1);
 
   delay_cnt(10000);
 }
@@ -120,7 +120,7 @@ void BOOT_Pin_Init()
 	
   	GPIO_Init(BOOT_GPIO_PORT, &GPIO_InitStructure);
 
-    PAD_AFConfig(PAD_PA, BOOT_PIN, PAD_AF1);
+    PAD_AFConfig(PAD_PC, BOOT_PIN, PAD_AF1);
 }
 
 /**
@@ -153,13 +153,13 @@ void Board_factory_Init(void)
 
   	GPIO_Init(FACT_GPIO_PORT, &GPIO_InitStructure);
 
-    PAD_AFConfig(PAD_PA, FACT_PIN, PAD_AF1);
+    PAD_AFConfig(PAD_PC, FACT_PIN, PAD_AF1);
 
     /* Set to GPIO_Pin_0 to External Interrupt Port */
     EXTI_InitDef.EXTI_Line = FACT_PIN; // Connecting FACT_PIN(EXTI Input)
     EXTI_InitDef.EXTI_Trigger = EXTI_Trigger_Falling; // Set to Trigger to Falling
-    EXTI_Init(PAD_PA, &EXTI_InitDef); // Set to PAD_PA
-    EXTI_Polarity_Set(PAD_PA,FACT_PIN,EXTI_Trigger_Falling); // Set to Polarity
+    EXTI_Init(PAD_PC, &EXTI_InitDef); // Set to PAD_PA
+    EXTI_Polarity_Set(PAD_PC,FACT_PIN,EXTI_Trigger_Falling); // Set to Polarity
 }
 
 /**

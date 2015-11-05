@@ -227,17 +227,19 @@ int main()
 
 	LED_Init(LED1);
 	LED_Init(LED2);
-	//LED_Init(LED3);
 
 	LED_Off(LED1);
 	LED_Off(LED2);
-	//LED_Off(LED3);
 
 	g_sdcard_done = 0;
 
 	BOOT_Pin_Init();
 	Board_factory_Init();
 	EXTI_Configuration();
+
+#if defined(EEPROM_ENABLE)
+    I2C_Init();
+#endif
 
 	/* Load Configure Information */
 	load_S2E_Packet_from_storage();

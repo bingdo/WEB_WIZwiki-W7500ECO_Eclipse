@@ -141,8 +141,8 @@ void I2C0_Handler(void)
   * @param  None
   * @retval None
   */
-void I2C1_Handler(void)
-{}
+//void I2C1_Handler(void)
+//{}
 
 
 /**
@@ -277,16 +277,16 @@ void PWM7_Handler(void)
   * @param  None
   * @retval None
   */
-void ADC_Handler(void)
-{}
+//void ADC_Handler(void)
+//{}
 
 /**
   * @brief  This function handles WATOE Handler.
   * @param  None
   * @retval None
   */
-void WZTOE_Handler(void)
-{}
+//void WZTOE_Handler(void)
+//{}
 
 /**
   * @brief  This function handles EXTI Handler.
