@@ -67,68 +67,68 @@ typedef enum
   On 	= 1
 } IO_Status_Type;
 
-#define D0_PIN							GPIO_Pin_14
+#define D0_PIN							GPIO_Pin_5
 #define D0_GPIO_PORT					GPIOA
 #define D0_PAD							PAD_PA
 
-#define D1_PIN							GPIO_Pin_13
+#define D1_PIN							GPIO_Pin_6
 #define D1_GPIO_PORT					GPIOA
 #define D1_PAD							PAD_PA
 
-#define D2_PIN							GPIO_Pin_1
-#define D2_GPIO_PORT					GPIOC
-#define D2_PAD							PAD_PC
+#define D2_PIN							GPIO_Pin_7
+#define D2_GPIO_PORT					GPIOA
+#define D2_PAD							PAD_PA
 
-#define D3_PIN							GPIO_Pin_0
-#define D3_GPIO_PORT					GPIOC
-#define D3_PAD							PAD_PC
+#define D3_PIN							GPIO_Pin_8
+#define D3_GPIO_PORT					GPIOA
+#define D3_PAD							PAD_PA
 
 #define D4_PIN							GPIO_Pin_9
-#define D4_GPIO_PORT					GPIOC
-#define D4_PAD							PAD_PC
+#define D4_GPIO_PORT					GPIOA
+#define D4_PAD							PAD_PA
 
-#define D5_PIN							GPIO_Pin_8
-#define D5_GPIO_PORT					GPIOC
-#define D5_PAD							PAD_PC
+#define D5_PIN							GPIO_Pin_10
+#define D5_GPIO_PORT					GPIOA
+#define D5_PAD							PAD_PA
 
-#define D6_PIN							GPIO_Pin_0
-#define D6_GPIO_PORT					GPIOA
-#define D6_PAD							PAD_PA
+#define D6_PIN							GPIO_Pin_8
+#define D6_GPIO_PORT					GPIOC
+#define D6_PAD							PAD_PC
 
-#define D7_PIN							GPIO_Pin_6
+#define D7_PIN							GPIO_Pin_9
 #define D7_GPIO_PORT					GPIOC
 #define D7_PAD							PAD_PC
 
-#define D8_PIN							GPIO_Pin_7
+#define D8_PIN							GPIO_Pin_0
 #define D8_GPIO_PORT					GPIOC
 #define D8_PAD							PAD_PC
 
-#define D9_PIN							GPIO_Pin_4
+#define D9_PIN							GPIO_Pin_1
 #define D9_GPIO_PORT					GPIOC
 #define D9_PAD							PAD_PC
 
-#define D10_PIN							GPIO_Pin_5
-#define D10_GPIO_PORT					GPIOA
-#define D10_PAD							PAD_PA
+#define D10_PIN							GPIO_Pin_2
+#define D10_GPIO_PORT					GPIOC
+#define D10_PAD							PAD_PC
 
-#define D11_PIN							GPIO_Pin_8
-#define D11_GPIO_PORT					GPIOA
-#define D11_PAD							PAD_PA
+#define D11_PIN							GPIO_Pin_3
+#define D11_GPIO_PORT					GPIOC
+#define D11_PAD							PAD_PC
 
-#define D12_PIN							GPIO_Pin_7
-#define D12_GPIO_PORT					GPIOA
-#define D12_PAD							PAD_PA
+#define D12_PIN							GPIO_Pin_12
+#define D12_GPIO_PORT					GPIOC
+#define D12_PAD							PAD_PC
 
-#define D13_PIN							GPIO_Pin_6
-#define D13_GPIO_PORT					GPIOA
-#define D13_PAD							PAD_PA
+#define D13_PIN							GPIO_Pin_13
+#define D13_GPIO_PORT					GPIOC
+#define D13_PAD							PAD_PC
 
-#define D14_PIN							GPIO_Pin_10
-#define D14_GPIO_PORT					GPIOA
-#define D14_PAD							PAD_PA
+#define D14_PIN							GPIO_Pin_14
+#define D14_GPIO_PORT					GPIOC
+#define D14_PAD							PAD_PC
 
-#define D15_PIN							GPIO_Pin_9
-#define D15_GPIO_PORT					GPIOA
-#define D15_PAD							PAD_PA
+#define D15_PIN							GPIO_Pin_15
+#define D15_GPIO_PORT					GPIOC
+#define D15_PAD							PAD_PC
 
 #endif

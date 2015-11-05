@@ -7,7 +7,7 @@
 #include "W7500x_gpio.h"
 #include "boardutil.h"
 
-#define LEDn                             3
+#define LEDn                             2
 
 #define LED1_PIN						GPIO_Pin_1
 #define LED1_GPIO_PORT					GPIOA
@@ -19,26 +19,20 @@
 //#define LED2_GPIO_PAD					PAD_PA
 //#define LED2_GPIO_AF					PAD_AF1
 
-#define LED3_PIN						GPIO_Pin_5
-#define LED3_GPIO_PORT					GPIOC
-//#define LED3_GPIO_PAD					PAD_PC
-//#define LED3_GPIO_AF					PAD_AF1
-
-#define BOOT_PIN						GPIO_Pin_11
-#define BOOT_GPIO_PORT					GPIOA
-//#define BOOT_GPIO_PAD					PAD_PA
+#define BOOT_PIN						GPIO_Pin_6
+#define BOOT_GPIO_PORT					GPIOC
+//#define BOOT_GPIO_PAD					PAD_PC
 //#define BOOT_GPIO_AF					PAD_AF1
 
-#define FACT_PIN						GPIO_Pin_12
-#define FACT_GPIO_PORT					GPIOA
-//#define FACT_GPIO_PAD					PAD_PA
+#define FACT_PIN						GPIO_Pin_7
+#define FACT_GPIO_PORT					GPIOC
+//#define FACT_GPIO_PAD					PAD_PC
 //#define FACT_GPIO_AF					PAD_AF1
 
 typedef enum
 {
   LED1 = 0,
-  LED2 = 1,
-  LED3 = 2
+  LED2 = 1
 } Led_TypeDef;
 
 void LED_Init(Led_TypeDef Led);
